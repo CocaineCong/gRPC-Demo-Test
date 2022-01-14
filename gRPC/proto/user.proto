@@ -1,5 +1,4 @@
 // 一个message类型定义描述了一个请求或响应的消息格式，可以包含多种类型字段
-// 例如定义一个搜索请求的消息格式，每个请求包含查询字符串、页码、每页数目
 // 字段名用小写，转为go文件后自动变成大写，message就相当于结构体
 // 版本号
 syntax = "proto3";
@@ -18,8 +17,7 @@ message UserResponse{
    int32 id = 1;
    string name = 2;
    int32 age = 3;
-   // 字段修饰符
-   // repeated 表示可变数组，类似于切片类型
+   // repeated 字段修饰符 表示可变数组，类似于切片类型
    repeated string hobby = 4;
 }
 
